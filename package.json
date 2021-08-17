@@ -1,44 +1,45 @@
 {
   "name": "ulli",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
+  "version": "1.0.2",
+  "description": "Utility react component to render arrays of stuff",
+  "main": "dist/Ulli.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "build": "rm -rf dist && NODE_ENV=production babel Ulli.js --out-dir dist --copy-files"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AttLii/ulli.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "react",
+    "ul",
+    "li",
+    "utility"
+  ],
+  "author": "Atte Liimatainen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AttLii/ulli/issues"
   },
+  "homepage": "https://github.com/AttLii/ulli#readme",
   "peerDependencies": {
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^12.0.0",
+    "jest": "^27.0.6",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   }
 }
