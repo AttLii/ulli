@@ -1,26 +1,44 @@
 import PropTypes from "prop-types"
 
-export const Ulli = ({ className, itemClassName, itemFunc, list }) =>
+export const Ulli = ({
+  list,
+  itemFunc,
+  className,
+  itemClassName,
+  ItemElement,
+  ListElement
+}) => (
   list.length > 0 ? (
-    <ul className={className}>
+    <ListElement className={className}>
       {list.map((item, i) => (
-        <li key={i} className={itemClassName}>
+        <ItemElement key={i} className={itemClassName}>
           {itemFunc(item, i)}
-        </li>
+        </ItemElement>
       ))}
-    </ul>
+    </ListElement>
   ) : null
+)
 
 Ulli.defaultProps = {
-  className: undefined,
+  list: [],
   itemFunc: () => {},
+  className: undefined,
   itemClassName: undefined,
-  list: []
+  ListElement: "ul",
+  ItemElement: "li"
 }
 
 Ulli.propTypes = {
   className: PropTypes.string,
   itemClassName: PropTypes.string,
   itemFunc: PropTypes.func,
-  list: PropTypes.array
+  list: PropTypes.array,
+  ListElement: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func
+  ]),
+  ItemElement: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.func
+  ]),
 }

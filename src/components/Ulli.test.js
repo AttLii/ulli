@@ -72,3 +72,32 @@ test("component accepts className and itemClassName prop, that is applied to ele
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test("component accepts ListElement and ItemElement prop, that can be a react component", () => {
+  const MyDiv = ({ children, ...rest }) => <div {...rest}>{children}</div>
+  const MyButton = ({ children, ...rest }) => <button {...rest}>{children}</button>
+
+  const tree = renderer
+    .create(
+      <Ulli
+        list={["item1", "item2"]}
+        ListElement={MyDiv}
+        ItemElement={MyButton}
+      />
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test("component accepts ListElement and ItemElement prop, that can be a string of html element", () => {
+  const tree = renderer
+    .create(
+      <Ulli
+        list={["item1", "item2"]}
+        ListElement="div"
+        ItemElement="button"
+      />
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
