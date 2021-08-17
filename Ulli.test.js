@@ -101,3 +101,9 @@ test("component accepts ListElement and ItemElement prop, that can be a string o
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+
+test("this should fail", () => {
+  expect(true).toBeFalsy();
+});
+
