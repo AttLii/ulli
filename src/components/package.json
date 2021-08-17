@@ -1,10 +1,11 @@
 {
   "name": "ulli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility react component to render arrays of stuff",
-  "main": "Ulli.js",
+  "main": "dist/Ulli.js",
   "scripts": {
-    "test": "yarn --cwd ../../ test"
+    "test": "yarn --cwd ../../ test",
+    "build": "rm -rf dist && NODE_ENV=production babel Ulli.js --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,14 @@
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
   }
 }
