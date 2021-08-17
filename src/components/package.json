@@ -1,0 +1,29 @@
+{
+  "name": "ulli",
+  "version": "1.0.0",
+  "description": "Utility react component to render arrays of stuff",
+  "main": "Ulli.js",
+  "scripts": {
+    "test": "yarn --cwd ../../ test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AttLii/ulli.git"
+  },
+  "keywords": [
+    "react",
+    "ul",
+    "li",
+    "utility"
+  ],
+  "author": "Atte Liimatainen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AttLii/ulli/issues"
+  },
+  "homepage": "https://github.com/AttLii/ulli#readme",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2"
+  }
+}
