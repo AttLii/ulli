@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesn't render anything with empty list-prop 1`] = `null`;
+
+exports[`doesn't render anything without list-prop 1`] = `null`;
+
+exports[`itemFunc has access to each item and current index 1`] = `
+<ul>
+  <li>
+    <div>
+      item1
+       
+      0
+    </div>
+  </li>
+  <li>
+    <div>
+      item2
+       
+      1
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`renders itemFunc's result as each <li> elements children 1`] = `
+<ul>
+  <li>
+    hi
+  </li>
+  <li>
+    hi
+  </li>
+</ul>
+`;
+
+exports[`renders only ul > li without itemFn-prop 1`] = `
+<ul>
+  <li />
+  <li />
+</ul>
+`;
