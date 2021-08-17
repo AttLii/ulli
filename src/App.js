@@ -1,4 +1,3 @@
-import { Component } from "react"
 import { Ulli } from "./components/Ulli";
 
 export default function App() {
