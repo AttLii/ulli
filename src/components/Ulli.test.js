@@ -57,4 +57,18 @@ test("itemFunc has access to each item and current index", () => {
   expect(tree).toMatchSnapshot();
 });
 
+test("component accepts className and itemClassName prop, that is applied to elements", () => {
+  const itemFunc = (item, i) => <div>{item} {i}</div>
 
+  const tree = renderer
+    .create(
+      <Ulli
+        className="app__list"
+        itemClassName="app__list-item"
+        list={["item1", "item2"]}
+        itemFunc={itemFunc}
+      />
+    )
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

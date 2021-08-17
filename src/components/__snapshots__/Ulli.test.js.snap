@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`component accepts className and itemClassName prop, that is applied to elements 1`] = `
+<ul
+  className="app__list"
+>
+  <li
+    className="app__list-item"
+  >
+    <div>
+      item1
+       
+      0
+    </div>
+  </li>
+  <li
+    className="app__list-item"
+  >
+    <div>
+      item2
+       
+      1
+    </div>
+  </li>
+</ul>
+`;
+
 exports[`doesn't render anything with empty list-prop 1`] = `null`;
 
 exports[`doesn't render anything without list-prop 1`] = `null`;
