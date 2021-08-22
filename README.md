@@ -27,7 +27,7 @@ const itemFunc = (item, i) => <div>{item}</div>
 | --- | --- | --- |
 | `list` | Array of items | array |
 | `itemFunc` | Iterator function for each item | function |
-| `className` | className for <ul> | string |
-| `itemClassName` | className for each <li> | string |
-| `ItemElement` | React component or a string to replace each <li>  | function or string |
-| `ListElement` | React component or a string to replace <ul> | function or string |
+| `className` | className for `<ul>` | string |
+| `itemClassName` | className for each `<li>` | string |
+| `ItemElement` | React component or a string to replace each `<li>`  | function or string |
+| `ListElement` | React component or a string to replace `<ul>` | function or string |
