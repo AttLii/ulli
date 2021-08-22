@@ -1,6 +1,6 @@
 {
   "name": "ulli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utility react component to render arrays of stuff",
   "main": "dist/Ulli.js",
   "scripts": {
