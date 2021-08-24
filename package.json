@@ -1,11 +1,12 @@
 {
   "name": "ulli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utility react component to render arrays of stuff",
   "main": "dist/Ulli.js",
+  "module": "dist/Ulli.es.js",
   "scripts": {
     "test": "jest",
-    "build": "rm -rf dist && NODE_ENV=production babel Ulli.js --out-dir dist --copy-files"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -28,16 +29,18 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@testing-library/react": "^12.0.0",
     "jest": "^27.0.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "rollup": "^2.56.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1"
