@@ -3,7 +3,7 @@ Utility component to render arrays of items to ul > li structure
 
 ## Usage 
 
-```
+```jsx
 const itemFunc = (item, i) => <div>{item}</div>
 
 <Ulli
