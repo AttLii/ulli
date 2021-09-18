@@ -41,8 +41,5 @@
     "rollup": "^2.56.3",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1"
   }
 }
