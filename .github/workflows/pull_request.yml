@@ -1,4 +1,4 @@
-name: Jest
+name: Pull Request
 on: [pull_request]
 jobs:
   test:
