@@ -4,6 +4,8 @@ Utility component to render arrays of items to ul > li structure
 ## Usage 
 
 ```jsx
+import { Ulli } from 'ulli'
+
 const itemFunc = (item, i) => <div>{item}</div>
 
 <Ulli
