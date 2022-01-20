@@ -1,6 +1,6 @@
 {
   "name": "ulli",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Utility react component to render arrays of stuff",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
