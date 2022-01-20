@@ -2,11 +2,14 @@
   "name": "ulli",
   "version": "1.1.1",
   "description": "Utility react component to render arrays of stuff",
-  "main": "dist/Ulli.js",
-  "module": "dist/Ulli.es.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rm -rf dist && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc --module esnext --outdir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "repository": {
     "type": "git",
@@ -25,21 +28,21 @@
   },
   "homepage": "https://github.com/AttLii/ulli#readme",
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
-    "@rollup/plugin-node-resolve": "^13.0.4",
     "@testing-library/react": "^12.0.0",
+    "@types/react": "^17.0.38",
     "jest": "^27.0.6",
-    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-test-renderer": "^17.0.2",
     "rollup": "^2.56.3",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^4.5.5"
   }
 }
