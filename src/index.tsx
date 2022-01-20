@@ -1,8 +1,8 @@
 import React, {ElementType, ReactNode} from "react"
 
 type Props<T> = {
-  list: T[];
-  itemFunc: (item: T, index: number) => ReactNode
+  list?: T[];
+  itemFunc?: (item: T, index: number) => ReactNode
   className?: string
   itemClassName?: string
   ListElement?: ElementType
@@ -10,8 +10,8 @@ type Props<T> = {
 };
 
 export const Ulli = <T,>({
-  list,
-  itemFunc,
+  list = [],
+  itemFunc =  () => null,
   className = undefined,
   itemClassName = undefined,
   ItemElement = "li",

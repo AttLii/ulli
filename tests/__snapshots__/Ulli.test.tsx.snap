@@ -16,10 +16,10 @@ exports[`component accepts ListElement and ItemElement prop, that can be a strin
 
 exports[`component accepts className and itemClassName prop, that is applied to elements 1`] = `
 <ul
-  className="app__list"
+  class="app__list"
 >
   <li
-    className="app__list-item"
+    class="app__list-item"
   >
     <div>
       item1
@@ -28,7 +28,7 @@ exports[`component accepts className and itemClassName prop, that is applied to 
     </div>
   </li>
   <li
-    className="app__list-item"
+    class="app__list-item"
   >
     <div>
       item2
