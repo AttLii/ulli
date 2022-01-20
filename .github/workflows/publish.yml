@@ -4,7 +4,7 @@ on:
     branches:
     - main
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,7 +13,6 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - run: yarn
-      - run: rm -rf cna
       - run: yarn build
       - run: yarn publish
         env:
