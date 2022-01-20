@@ -27,16 +27,3 @@ export const Ulli = <T,>({
     </ListElement>
   ) : null
 )
-
-
-/* => (
-  list.length > 0 ? (
-    <ListElement className={className}>
-      {list.map((item, i) => (
-        <ItemElement key={i} className={itemClassName}>
-          {itemFunc(item, i)}
-        </ItemElement>
-      ))}
-    </ListElement>
-  ) : null
-) */
